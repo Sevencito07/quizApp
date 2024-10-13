@@ -356,7 +356,15 @@ color: aliceblue;
 
 
 
+@media screen and (max-width: 768px) {
+  .optionIndex ul {
+    flex-direction: column;
+  }
+  .container {
+    width: 20rem;
 
+  }
+}
 
 
 
