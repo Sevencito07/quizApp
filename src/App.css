@@ -1,0 +1,373 @@
+:root {
+  --white: #fff;
+  --blue: rgb(50, 101, 243);
+  --yellow-transparent: #fffb07b7;
+  --yellow-transparent2:rgba(243, 239, 17, 0.918);
+  --black: rgb(19, 19, 19);
+  --black2: rgba(102, 101, 101, 0.384);
+  --aliceblue: aliceblue;
+  --black-transparent: #050505d7;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color:  var(--white);
+  display: grid;
+  place-items: center;
+
+}
+.main{
+  
+  width: 100%;
+  display: grid;
+  place-content: center;
+}
+
+.container {
+  width: 50rem;
+  margin: 20px auto;
+  padding: 20px;
+  background-color:  var(--aliceblue);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.pythonSecction{
+  width: 25rem;
+  height: 20rem;
+  margin-top: 3rem;
+  position: absolute;
+  z-index: 99;
+  border-radius: 5px;
+  flex-direction: row;
+}
+
+
+nav{
+  width: 100%;
+  height: 2rem;
+  display: flex;
+  flex-direction: row;
+
+}
+nav .separateDiv1{
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  height: 2rem;
+
+}
+nav .separateDiv2{
+  display: flex;
+  flex-direction: row;
+  height: 2rem;
+  width: 20%;
+}
+ .navDiv{
+  width: 2rem;
+  height: 100%;
+  margin-left: 1rem;
+
+}
+
+.navDiv img {
+  width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navDiv img:hover {
+  transform: translateY(-7px);
+}
+
+
+.lists{
+  width: auto;
+  height: auto;
+  position: relative;
+  
+  }
+
+
+  .question {
+    margin-bottom: 20px;
+  }
+.options {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.divContent{
+  width: 100%;
+  height: 15rem;
+  place-content: center;
+
+}
+.options li {
+  display: grid;
+  width: 20rem;
+  height: 12rem;
+  list-style: none;
+  place-content: center;
+  margin: 1rem;
+ 
+}
+li:hover{   color: rgba(8, 252, 8, 0.24);}
+.correct {
+  color: rgba(75, 74, 74, 0.952);
+}
+
+.optionIndex{
+  position: absolute;
+ margin-right: 28rem;
+
+}
+ .optionIndex ul{
+  position: absolute;
+  background-color: var(--white);
+  flex-direction: row;
+ }
+ 
+ pre{
+  background-color:   var(--black-transparent);
+  color: var(--white);
+  font-size: x-small;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  width: 100%;
+  height: auto;
+  text-align: start;
+
+}
+
+.explanation {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.button-deficulty{
+  display: flex;
+  background-color: rgba(8, 252, 8, 0.075);
+  color:rgba(54, 54, 54, 0.863);
+  width: 100%;
+  height: 1.7rem;
+  border-radius: 10px;
+  border-color: rgba(8, 252, 8, 0.24); 
+  place-content: center;
+}
+.button1{
+    background-color: rgb(243, 245, 121);
+    border-radius: 5px;
+    border-style: none;
+    width: 100%;
+    color: #5e5b5b;
+    font-size: larger;
+    top: 0;
+    z-index: 99;
+   position: sticky;
+}
+.button2{
+   background-color: rgb(85, 155, 247);
+   border-radius: 5px;
+   border-style: none;
+   width: 100%;
+   color: #5e5b5b;
+   font-size: larger;
+   top: 0;
+   z-index: 99;
+  position: sticky;
+}
+.button3{
+   background-color: rgb(245, 119, 144);
+   border-radius: 5px;
+   border-style: none;
+   width: 100%;
+   color: #5e5b5b;
+   font-size: larger;
+   top: 0;
+   z-index: 99;
+  position: sticky;
+}
+button:hover{
+  background-color: rgba(33, 37, 33, 0.404);
+  color: white;
+}
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid var(--black-transparent);
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.consoleStyle{
+  background-color: var(--black);
+
+}
+.divConsole{
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+.consoleCMD{
+  color: var(--yellow-transparent);
+}
+
+
+.divModules{
+  width: 60rem;
+  height: 14rem;
+  margin-top: 3.5rem;
+  text-align: center;
+}
+.conteinerModules{
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+}
+.h1Modules{
+  color: var(--black-transparent);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 400;
+  margin-bottom: -2px;
+}
+
+.conteinerModules .modulesLines{
+display: flex;
+flex-direction: row;
+color: aliceblue;
+}
+.conteinerModules .modulesLines .moduleNumber{
+  display: grid;
+  width: 2rem;
+  height: 2rem;
+  color:var(--black-transparent);
+  text-align: center;
+  place-content: center;
+  background-color: white;
+  border: 1px solid rgb(255, 230, 0);
+  margin: 1px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.navDiv img {
+  width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.conteinerModules .modulesLines .moduleNumber:hover {
+  transform: translateY(-3px);
+  background-color: rgb(245, 244, 180);
+  border: 1px solid rgba(222, 231, 223, 0.836);
+}
+
+
+
+.announcement {
+  position: absolute;
+  z-index: 999;
+  background-color: #050505d7;
+  width: 95%;
+  place-content: center;
+  animation: AnimationName 35s ease infinite;
+}
+
+.score-container {
+  background: linear-gradient(270deg, #f1e31b, #0959ee, #89f1f8);
+  background-size: 600% 600%;
+  animation: AnimationName 35s ease infinite;
+  width: 20rem;
+  height: 20rem;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+}
+
+.score-container2 {
+  display: grid;
+  background-color: aliceblue;
+  width: 15.5rem;
+  height: 15.5rem;
+  border-radius: 50%;
+  place-content: center;
+}
+
+.spanDiv {
+  width: 11rem;
+}
+
+.score-container .score-container2 .spanNum1 {
+  color: rgb(79, 124, 248);
+  font-size: 6rem;
+ margin-left: 1rem;
+}
+
+.score-container .score-container2 .spanNum2 {
+  position: absolute;
+  color: rgb(77, 68, 68);
+  font-size: 15rem;
+  margin-left: 2.7rem;
+  top: 1.2rem;
+  transform: rotate(45deg);
+}
+
+.score-container .score-container2 .spanNum3 {
+  color: rgb(73, 65, 69);
+  font-size: 6rem;
+  margin-left: 4rem;
+}
+
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.test3{
+  width: 2rem;
+  height: 1rem;
+  background-color: rgb(231, 106, 221);
+}
